@@ -5,17 +5,17 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="About | Jamie Taylor" description="About Jamie Taylor">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
 				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				tagline="Want to know more about me? Read below."
 			>
 				<img
 					width="1553"
 					height="873"
-					src="/assets/at-work.jpg"
+					src="/assets/about_photo.jpg"
 					alt="Jeanine White at work with a colleague"
 				/>
 			</Hero>
@@ -24,35 +24,70 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						I'm a Freelance Web Developer, Podcaster, and Podcast Producer based in Nottingham, UK. My diverse career background includes a BSc(Hons) in Chemistry and working as a Production Administrator and in the Civil Service before entering the tech world in 2021. As a tech nerd and radio enthusiast, I'm passionate about building high-quality web products and producing engaging podcasts.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						During my time at university, I produced and presented shows at LUSH Radio (now Galaxy Radio) and held various leadership roles, helping to professionalize the station's output. Outside of work, I worked as a freelance producer at BBC Radio Leicester and currently co-host a comedy podcast with my friend Jack Campbell.
 					</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>BSc<em>(Hons)</em> Chemistry, University of Leicester (2012)</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<h5>Front-end Web Dev</h5>
+					<ul>
+						<li>HTML</li>
+						<li>CSS (including Bootstrap and Tailwind Frameworks)</li>
+						<li>JavaScript</li>
+						<li>Astro</li>
+					</ul>
+					<h5>Back-end Web Dev</h5>
+					<ul>
+						<li>Node.js</li>
+						<li>Express</li>
+						<!-- <li>MongoDB</li> -->
+					</ul>
+					<h5>Podcasting and Radio</h5>
+						<ul>
+							<li>Production, planning and writing (News, Sports and Entertainment)</li>
+							<li>Audio Editing (Audacity, Adobe Audition)</li>
+							<li>Video Editing (Davinci Resolve)</li>
+							<li>Social & Digital</li>
+							<li>Hardware and Broadcast Engineering</li>
+						</ul>
+					<h5>Tech</h5>
+					<ul>
+						<li>Custom PC building & repair</li>
+						<li>Tech Support (Windows, MacOS, Active Directory, jamf, MS365)</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<h2 class ="section-title">Hobbies</h2>
+				<div class="content">
+					<h5>Gaming</h5>
+					<ul>
+						<li>World of Warcraft (Competitive raider and WeakAura Developer)</li>
+						<li>Street Fighter (Former competitive player, tournament organiser and eSports broadcaster)</li>
+					</ul>
+					<h5>Music</h5>
+					<ul>
+						<li>Drumming</li>
+						<li>Piano</li>
+						<li>Production</li>
+					</ul>
+					<h5>Sports</h5>
+					<ul>
+						<li>Football (I support Wolverhampton Wanderers FC)</li>
+						<li>Formula 1</li>
+					</ul>
+					<h5>TV & Film</h5>
 				</div>
 			</section>
 		</main>
@@ -70,7 +105,7 @@ import Hero from '../components/Hero.astro';
 
 	img {
 		margin-top: 1.5rem;
-		border-radius: 1.5rem;
+		border-radius: 0;
 		box-shadow: var(--shadow-md);
 	}
 
@@ -79,6 +114,14 @@ import Hero from '../components/Hero.astro';
 		flex-direction: column;
 		gap: 0.5rem;
 		color: var(--gray-200);
+	}
+
+	ul {
+		margin-bottom: 1rem;
+	}
+
+	p {
+		margin-bottom: 1rem;
 	}
 
 	.section-title {
